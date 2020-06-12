@@ -22,23 +22,33 @@ body{
     margin: 0 auto;
 }
 
+.container-fisso{
+    width: 100%;
+    height: 70px;
+    background-color: #f5f8fa;
+    border-bottom: 2px solid #cbd6e2;
+    position: fixed;
+    z-index: 2;
+}
+
 header{
     background-color: #f5f8fa;
     height: 140px;
     position: relative;
 }
 
-.banner{
-    background-color: #fff2ee;
-    /* DA CANCELLARE */
-    height: 400px;
+header .bottom{
+    height: 50%;
+    background-color:#f5f8fa;
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
 }
 
-.space{
-    background-color:#afebe4;
-    height:100px;
-    border-top:3px solid #33475b;
-    border-bottom:3px solid #33475b;
+.banner{
+    background-color: #fff2ee;
+    position: relative;
 }
 
 .bg-grey{
@@ -65,28 +75,8 @@ footer{
     height: 450px;
 }
 
-/* INIZIO HEADER */
-
-header .fisso{
-    height: 70px;
-    background-color: #f5f8fa;
-    position: fixed;
-    left:50%;
-    transform: translateX(-50%);
-    border-bottom: 2px solid #cbd6e2;
-    z-index: 2;
-}
-
-header .bottom{
-    height: 50%;
-    background-color:#f5f8fa;
-    position: absolute;
-    bottom: 0;
-    left:50%;
-    transform: translateX(-50%);
-}
-
-header .top-left{
+/* INIZIO PARTE FISSA */
+.top-left{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -111,7 +101,7 @@ header .top-left{
     float: right;
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 10%;
     transform: translateY(-50%);
 }
 
@@ -128,7 +118,7 @@ header .top-left{
     margin: 0 25px;
 }
 
-.orange{
+.orange.small{
     background-color: #ff7a59;
     border: none;
     border-radius: 3px;
@@ -136,7 +126,9 @@ header .top-left{
     padding:9px 12px;
     margin-right: 5px;
 }
+/* FINE PARTE FISSA */
 
+/* INIZIO HEADER */
 .logo img{
     width: 150px;
     position: absolute;
@@ -168,7 +160,58 @@ nav li{
     padding-left: 15px;
 }
 
-
-
-
+li:hover{
+    text-decoration: underline;
+}
 /* FINE HEADER */
+
+/* INIZIO BANNER */
+
+.banner img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    float: left;
+}
+
+.banner hr{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #adeae3;
+    border-top:2px solid #33475b;
+    border-bottom:2px solid #33475b;
+    border-right: none;
+}
+
+.jumbotron{
+    float: left;
+    width: 30%;
+    position: absolute;
+    margin-top: 75px;
+}
+
+.banner h1{
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 40px;
+    line-height: 1.0;
+    color: #33475b;
+    padding-bottom: 25px;
+}
+
+.banner p, span{
+    font-size: 13px;
+    color:#33475b;
+    line-height: 1.8;
+}
+
+.banner .orange.big{
+    background-color: #ff7a59;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 30px;
+    margin: 25px 0;
+}

@@ -4,30 +4,34 @@
         <meta charset="utf-8">
         <title>HubSpot</title>
         <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <!-- INIZIO HEADER -->
-        <header>
-            <!-- inizio header top -->
-            <div class="container fisso">
+
+        <!-- INIZIO PARTE FISSA -->
+        <section class="container-fisso">
+            <div class="container">
                 <div class="top-left">
-                        <span id="english">
-                            <i class="fas fa-globe-europe"></i>
-                            English
-                            <i class="fas fa-chevron-down"></i>
-                        </span>
-                        <span id="contact">Contact Us</span>
-                    </div>
+                    <span id="english">
+                        <i class="fas fa-globe-europe"></i>
+                        English
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                    <span id="contact">Contact Us</span>
+                </div>
                 <div class="top-right">
                     <i class="fas fa-search"></i>
                     <button id="login" type="button" name="">Log in</button>
-                    <button class="orange"type="button" name="">GetHubspotFree</button>
+                    <button class="orange small"type="button" name="">GetHubspotFree</button>
                 </div>
             </div>
-            <!-- fine header top -->
-            <!-- inizio header bottom -->
+        </section>
+        <!-- FINE PARTE FISSA -->
+
+        <!-- INIZIO HEADER -->
+        <header>
             <div class="container bottom">
                 <div class="logo">
                     <img src="https://sharpspring.com/wp-content/uploads/2017/12/hubspot-logo.png" alt="">
@@ -42,15 +46,23 @@
                     </ul>
                 </nav>
             </div>
-            <!-- fine header bottom -->
         </header>
         <!-- FINE HEADER -->
+
         <!-- INIZIO BANNER -->
         <section class="banner">
-
+            <div class="container clearfix">
+                <img src="img/bg-jumbotron.png" alt="">
+                <hr>
+                <div class="jumbotron">
+                    <h1>There's a better way to grow.</h1>
+                    <p>Marketing, sales, and service software that helps your business grow without compromise. Because "good for the business" should also mean "good for the customer."</p>
+                    <button class="orange big" type="button" name="button">GetHubspotFree</button> <br>
+                    <span>Get started with FREEtools, and upgrade as you grow.</span>
+                </div>
+            </div>
         </section>
         <!-- FINE BANNER -->
-        <hr class="space">
         <!-- INIZIO BG-GREY -->
         <main class="bg-grey">
 
