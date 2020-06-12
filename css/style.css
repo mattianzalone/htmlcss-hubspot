@@ -4,17 +4,28 @@
     box-sizing: border-box;
 }
 
+
+
 .clearfix::after{
     content: '';
     display: table;
     clear: both;
 }
 
+body{
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.container{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
 header{
     background-color: #f5f8fa;
-    /* DA CANCELLARE */
-    height: 200px;
-    border-bottom: 2px solid black;
+    height: 140px;
+    position: relative;
 }
 
 .banner{
@@ -53,3 +64,111 @@ footer{
     /* DA CANCELLARE */
     height: 450px;
 }
+
+/* INIZIO HEADER */
+
+header .fisso{
+    height: 70px;
+    background-color: #f5f8fa;
+    position: fixed;
+    left:50%;
+    transform: translateX(-50%);
+    border-bottom: 2px solid #cbd6e2;
+    z-index: 2;
+}
+
+header .bottom{
+    height: 50%;
+    background-color:#f5f8fa;
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+header .top-left{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    float: left;
+}
+
+#english{
+    border-right: 3px solid #d2dce6;
+    padding-right: 20px;
+}
+
+#contact{
+    margin-left:20px;
+}
+
+.top-left span{
+    float: left;
+    color:#33475b;
+}
+
+.top-right{
+    float: right;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.top-right i{
+    color:#00a4bd;
+}
+
+#login{
+    background-color: #ffffff;
+    border-color: #ff7a59;
+    border-radius: 3px;
+    color:#ff7a59;
+    padding:8px 5px;
+    margin: 0 25px;
+}
+
+.orange{
+    background-color: #ff7a59;
+    border: none;
+    border-radius: 3px;
+    color:#ffffff;
+    padding:9px 12px;
+    margin-right: 5px;
+}
+
+.logo img{
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-15%, -50%);
+    float: left;
+}
+
+nav.buttom-right{
+    float: right;
+    position: absolute;
+    right:0;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.buttom-right ul{
+    position: relative;
+    color: #33475b;
+}
+
+nav li{
+ float: left;
+ list-style: none;
+ margin-left: 30px;
+}
+
+.buttom-right i{
+    padding-left: 15px;
+}
+
+
+
+
+/* FINE HEADER */
