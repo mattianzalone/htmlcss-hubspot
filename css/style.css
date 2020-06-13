@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
 .clearfix::after{
     content: '';
     display: table;
@@ -37,7 +35,7 @@ header{
     position: relative;
 }
 
-header .bottom{
+header .header-bottom{
     height: 50%;
     background-color:#f5f8fa;
     position: absolute;
@@ -53,8 +51,6 @@ header .bottom{
 
 .bg-grey{
     background-color: #f5f8fa;
-    /* DA CANCELLARE */
-    height: 600px;
 }
 
 .bg-lightblue{
@@ -166,7 +162,6 @@ li:hover{
 /* FINE HEADER */
 
 /* INIZIO BANNER */
-
 .banner img{
     width: 100%;
     object-fit: cover;
@@ -207,11 +202,118 @@ li:hover{
     line-height: 1.8;
 }
 
-.banner .orange.big{
+.orange-big{
     background-color: #ff7a59;
     border: none;
     border-radius: 5px;
     color: white;
     padding: 15px 30px;
+}
+
+.jumbotron .orange-big{
     margin: 25px 0;
+}
+/* FINE BANNER */
+/* INIZIO MAIN */
+.bg-grey #dado{
+    width:15%;
+    margin-top: 45px;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+/* INIZIO TOP MAIN */
+.bg-grey .top-main{
+width: 53%;
+position:relative;
+left:50%;
+transform: translateX(-50%);
+text-align: center;
+color: #33475b;
+}
+
+.top-main h2{
+    font-size: 30px;
+}
+
+.top-main p{
+    padding-top:15px;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 45px;
+}
+/* FINE TOP MAIN */
+/* INIZIO CENTER MAIN */
+.center-main{
+    background-color: #ffffff;
+    box-shadow: 1px 1px 2px 1px lightgrey;
+    border-radius: 2px;
+}
+ .center-left{
+     width:30%;
+     position: relative;
+     float: left;
+     margin-bottom: 70px;
+ }
+
+ .center-left img{
+    width: 150px;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    margin: 50px 0 70px 0;
+ }
+
+ .center-left .orange-big{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.center-right{
+    width: 70%;
+    float: left;
+    position: relative;
+    color: #33475b;
+}
+
+.center-right{
+    margin-top: 50px;
+    float: left;
+}
+
+.center-right h3, h4{
+    padding-bottom: 20px;
+}
+
+.center-right h3{
+    font-size: 22px;
+}
+
+hr{
+    width: 60%;
+    float: right;
+    position: absolute;
+    top:68%;
+    right: 15%;
+    transform: translateY(50%);
+}
+
+.center-right p, span{
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.center-right p{
+    line-height: 1.8;
+}
+
+.center-right i{
+    color: #ff7a59;
+    padding-right: 15px;
+}
+
+.center-right span{
+    padding-right: 18px;
 }
