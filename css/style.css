@@ -80,6 +80,7 @@ footer{
 
 #english:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 
 #contact{
@@ -88,6 +89,7 @@ footer{
 
 #contact:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .top-left span{
@@ -118,6 +120,7 @@ footer{
 
 #login:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .orange.small{
@@ -131,6 +134,7 @@ footer{
 
 .orange.small:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 /* FINE PARTE FISSA */
 
@@ -143,7 +147,7 @@ footer{
     float: left;
 }
 
-nav.buttom-right{
+nav.bottom-right{
     float: right;
     position: absolute;
     right:0;
@@ -151,7 +155,7 @@ nav.buttom-right{
     transform: translateY(-50%);
 }
 
-.buttom-right ul{
+.bottom-right ul{
     position: relative;
     color: #33475b;
 }
@@ -162,12 +166,16 @@ nav li{
  margin-left: 30px;
 }
 
-.buttom-right i{
+.bottom-right i{
     padding-left: 15px;
 }
 
-li:hover{
+.bottom-right li:hover{
     text-decoration: underline;
+}
+
+.bottom-right li:hover{
+    cursor: pointer;
 }
 /* FINE HEADER */
 
@@ -222,6 +230,7 @@ li:hover{
 
 .orange-big:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .jumbotron .orange-big{
@@ -567,6 +576,11 @@ color: #33475b;
     border-radius: 6px;
 }
 
+.colonne .grey:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .colonne i{
     color: #cbd6e2;
     margin-right: 20px;
@@ -618,9 +632,11 @@ footer hr{
 
 .colonne li:hover{
     color: rgb(10, 238, 241);
+    cursor: pointer;
 }
 
 .copyright span:hover{
     color: rgb(10, 238, 241);
+    cursor: pointer;
 }
 /* FINE FOOTER */
