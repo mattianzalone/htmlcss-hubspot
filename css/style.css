@@ -63,8 +63,6 @@ header .header-bottom{
 
 footer{
     background-color: #33475b;
-    /* DA CANCELLARE */
-    height: 450px;
 }
 
 /* INIZIO PARTE FISSA */
@@ -80,8 +78,16 @@ footer{
     padding-right: 20px;
 }
 
+#english:hover{
+    text-decoration: underline;
+}
+
 #contact{
     margin-left:20px;
+}
+
+#contact:hover{
+    text-decoration: underline;
 }
 
 .top-left span{
@@ -110,6 +116,10 @@ footer{
     margin: 0 25px;
 }
 
+#login:hover{
+    text-decoration: underline;
+}
+
 .orange.small{
     background-color: #ff7a59;
     border: none;
@@ -117,6 +127,10 @@ footer{
     color:#ffffff;
     padding:9px 12px;
     margin-right: 5px;
+}
+
+.orange.small:hover{
+    text-decoration: underline;
 }
 /* FINE PARTE FISSA */
 
@@ -204,6 +218,10 @@ li:hover{
     border-radius: 5px;
     color: white;
     padding: 15px 30px;
+}
+
+.orange-big:hover{
+    text-decoration: underline;
 }
 
 .jumbotron .orange-big{
@@ -517,3 +535,92 @@ color: #33475b;
 /* FINE CUSTOMERS */
 
 /* INIZIO FOOTER */
+.colonne{
+    width: calc(100%/4);
+    float: left;
+    text-align: justify;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    padding: 0 30px 0 15px;
+    float: left;
+}
+
+.colonne h4{
+    font-size: 20px;
+}
+
+.colonne ul{
+    list-style: none;
+}
+
+.colonne li{
+    color: #cbd6e2;
+    line-height: 2.5;
+    font-size: 20px;
+}
+
+.colonne .grey{
+    background-color: #ffffff;
+    color: #33475b;
+    padding: 10px 25px;
+    border-radius: 6px;
+}
+
+.colonne i{
+    color: #cbd6e2;
+    margin-right: 20px;
+}
+
+.copyright{
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+footer span{
+    color: #cbd6d5;
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+footer hr{
+    color: #cbd6d5;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.logo-copyright{
+    float: left;
+    color: #cbd6d5;
+}
+
+.logo-copyright img{
+    width: 70%;
+    float: left;
+    color: #cbd6d5;
+    margin-bottom: 5px;
+}
+
+.privacy{
+    color: #cbd6d5;
+    float:right;
+}
+
+.privacy span{
+    margin-right: 0;
+}
+
+.privacy #spazio{
+    padding-right: 30px;
+}
+
+.colonne li:hover{
+    color: rgb(10, 238, 241);
+}
+
+.copyright span:hover{
+    color: rgb(10, 238, 241);
+}
+/* FINE FOOTER */
