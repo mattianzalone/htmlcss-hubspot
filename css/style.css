@@ -59,8 +59,6 @@ header .header-bottom{
 
 .customers{
     background-color: #ffffff;
-    /* DA CANCELLARE */
-    height: 400px;
 }
 
 footer{
@@ -444,3 +442,78 @@ color: #33475b;
     border-top: 2px solid white;
 }
 /* FINE BG-LIGHTBLUE */
+
+/* INIZIO CUSTOMERS */
+.customer-top{
+    width: 90%;
+    height: 200px;
+    margin: 40px 0;
+    float: right;
+}
+
+.intestazione-customers{
+    width: 30%;
+    float: left;
+}
+
+.intestazione-customers h2{
+    font-size: 50px;
+    color: #33475b;
+    padding-bottom: 25px;
+}
+
+.intestazione-customers p{
+    font-size: 15px;
+    color: #33475b;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.img-customers{
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+}
+
+.img-customers img{
+    width: calc(100%/4);
+    height: 75px;
+    float: left;
+    padding: 20px;
+}
+
+.customers-bottom{
+    width: 100%;
+    float: left;
+}
+
+.customers-bottom .jumbotron{
+    width: 40%;
+    position: relative;
+    float: left;
+}
+
+.customers-bottom .jumbotron h2{
+    font-size: 35px;
+    color: #33475b;
+    padding-bottom: 20px;
+}
+
+.customers-bottom .jumbotron span{
+    font-size: 12px;
+}
+
+.immagine{
+    width: 60%;
+    float: left;
+    padding: 0 80px 50px 0;
+}
+
+.immagine img{
+    width: 55%;
+    position: relative;
+    float: right;
+}
+/* FINE CUSTOMERS */
+
+/* INIZIO FOOTER */
