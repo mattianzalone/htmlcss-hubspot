@@ -16,13 +16,14 @@ body{
 
 .container{
     width: 80%;
-    height: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .container-fisso{
     width: 100%;
     height: 70px;
+    top:0;
     background-color: #f5f8fa;
     border-bottom: 2px solid #cbd6e2;
     position: fixed;
@@ -31,17 +32,14 @@ body{
 
 header{
     background-color: #f5f8fa;
-    height: 140px;
+    height: 70px;
     position: relative;
+    line-height: 70px;
 }
 
 header .header-bottom{
     height: 50%;
     background-color:#f5f8fa;
-    position: absolute;
-    bottom: 0;
-    left:50%;
-    transform: translateX(-50%);
 }
 
 .banner{
@@ -71,11 +69,13 @@ footer{
     top: 50%;
     transform: translateY(-50%);
     float: left;
+    margin-top: 1
 }
 
 #english{
     border-right: 3px solid #d2dce6;
     padding-right: 20px;
+    padding-top: 10px;
 }
 
 #english:hover{
@@ -83,8 +83,49 @@ footer{
     cursor: pointer;
 }
 
+.submenu{
+    position: absolute;
+    background-color: #e6e2e2;
+    visibility: hidden;
+    margin-top: 10px;
+}
+
+.submenu .triangolo{
+    position: absolute;
+     bottom: 100%;
+     right: 50%;
+     margin-right:-35%;
+     transform: rotate(180deg);
+     content: '';
+     width:0;
+     height:0;
+     border-top: solid 10px #e6e2e2;
+     border-left: solid 10px transparent;
+     border-right: solid 10px transparent;
+}
+
+.submenu ul{
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.submenu li{
+    font-size: 17px;
+    line-height:2.5;
+}
+
+#english:hover .submenu{
+    visibility: visible;
+}
+
+.submenu li:hover{
+    background-color: #e5f5f8;
+}
+
 #contact{
     margin-left:20px;
+    padding-top: 10px;
 }
 
 #contact:hover{
@@ -139,6 +180,10 @@ footer{
 /* FINE PARTE FISSA */
 
 /* INIZIO HEADER */
+header{
+    margin-top: 70px;
+}
+
 .logo img{
     width: 150px;
     position: absolute;
@@ -149,10 +194,8 @@ footer{
 
 nav.bottom-right{
     float: right;
-    position: absolute;
+    position: relative;
     right:0;
-    top:50%;
-    transform: translateY(-50%);
 }
 
 .bottom-right ul{
@@ -160,10 +203,10 @@ nav.bottom-right{
     color: #33475b;
 }
 
-nav li{
+.bottom-right li{
  float: left;
  list-style: none;
- margin-left: 30px;
+ margin-left: 20px;
 }
 
 .bottom-right i{
@@ -177,6 +220,197 @@ nav li{
 .bottom-right li:hover{
     cursor: pointer;
 }
+/* INIZIO MENU A TENDINA SOFTWARE */
+.menu-software{
+    position: absolute;
+    float: left;
+    width: 480px;
+    background-color: #e6e2e2;
+    z-index: 4;
+    transform: translateX(-5%);
+    line-height: 1.5;
+    visibility: hidden;
+}
+
+.bottom-right .triangolo{
+    position: absolute;
+    bottom:100%;
+    left: 50%;
+    margin-left: -29%;
+    transform: rotate(180deg);
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: solid 15px #e6e2e2;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+}
+
+.bottom-right .menu-software li{
+    text-decoration: none;
+}
+
+.bottom-right .menu-software i{
+    font-size: 25px;
+    float: left;
+    margin-right: 15px;
+    margin-top: 20px;
+    color: #ff7a59;
+}
+
+.bottom-right .menu-software h3{
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.bottom-right .menu-software p{
+    margin-left: 55px;
+    font-size: 13px;
+}
+
+.menu-software hr{
+    width: 100%;
+    float: left;
+    margin: 15px 0;
+}
+
+#titolo-special p{
+    margin:0;
+    padding-bottom: 30px;
+}
+
+li:hover .menu-software{
+    visibility: visible;
+}
+
+.menu-software li:hover{
+    background-color:#e5f5f8;
+}
+/* FINE MENU A TENDINA SOFTWARE */
+
+/* INIZIO MENU TENDINA RESOURCES  */
+.menu-resources{
+    position: absolute;
+    float: left;
+    width: 900px;
+    background-color:#e6e2e2;
+    z-index: 4;
+    transform: translateX(-67%);
+    line-height: 1.5;
+    visibility: hidden;
+}
+
+.menu-resources .triangolo{
+    position: absolute;
+    bottom:100%;
+    left: 85%;
+    margin-left: -9%;
+    transform: rotate(180deg);
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: solid 15px #e6e2e2;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+}
+
+.mini-box{
+    width: calc(100%/3);
+    float: left;
+    padding: 15px;
+}
+
+.mini-box.bordo{
+    border-bottom: 1px solid grey;
+}
+
+.mini-box h3{
+    font-size: 20px;
+}
+
+.mini-box p{
+    font-size: 13px;
+}
+
+li:hover .menu-resources{
+    visibility: visible;
+}
+
+.menu-resources .mini-box:hover{
+    background-color: #e5f5f8;
+}
+/* FINE MENU TENDINA RESOURCES */
+/* INIZIO MENU TENDINA PARTENERS */
+.menu-parteners{
+    position: absolute;
+    float: left;
+    width: 550px;
+    background-color:#e6e2e2;
+    z-index: 4;
+    transform: translateX(-67%);
+    line-height: 1.5;
+    visibility: hidden;
+}
+
+.mini-box.parteners{
+    width: calc(100%/2);
+    float: left;
+    padding: 15px;
+}
+
+li:hover .menu-parteners{
+    visibility: visible;
+}
+
+.menu-parteners .mini-box:hover p{
+    background-color: #e5f5f8;
+}
+
+.menu-parteners .triangolo{
+    position: absolute;
+    bottom:100%;
+    left: 90%;
+    margin-left: -10%;
+    transform: rotate(180deg);
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: solid 15px #e6e2e2;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+}
+/* FINE MENU TENDINA PARTENERS */
+/* INIZIO MENU TENDINA ABOUT */
+.menu-about{
+    position: absolute;
+    float: left;
+    width: 550px;
+    background-color:#e6e2e2;
+    z-index: 4;
+    transform: translateX(-85%);
+    line-height: 1.8;
+    visibility: hidden;
+}
+
+.menu-about .triangolo{
+    position: absolute;
+    bottom:100%;
+    left: 95%;
+    margin-left:0;
+    transform: rotate(180deg);
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: solid 15px #e6e2e2;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+}
+
+li:hover .menu-about{
+    visibility: visible;
+}
+
+/* FINE MENU TENDINA ABOUT */
 /* FINE HEADER */
 
 /* INIZIO BANNER */
@@ -248,12 +482,12 @@ nav li{
 }
 /* INIZIO TOP MAIN */
 .bg-grey .top-main{
-width: 53%;
-position:relative;
-left:50%;
-transform: translateX(-50%);
-text-align: center;
-color: #33475b;
+    width: 53%;
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #33475b;
 }
 
 .top-main h2{
